@@ -16,3 +16,6 @@ array.forEach(function(item){
   higher.push(item)
  }
 });
+
+return quickSort(lower).concat(equal, quickSort(higher));
+}
